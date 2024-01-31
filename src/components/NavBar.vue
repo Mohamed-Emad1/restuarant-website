@@ -52,7 +52,7 @@
             <img src="../assets/food 1.png" alt="">
         </div>
 
-        <button @click="">LOGIN</button>
+        <button ><router-link style="list-style: none; color: var(--fifth-color); text-decoration: none;" to = '/loginViewVue'>LOGIN</router-link> </button>
         </div>
     </div>
 
@@ -78,7 +78,9 @@ export default {
     --fifth-color:rgba(255, 255, 255, 1);
 
 }
-
+.container{
+    box-shadow: 0px 10px 15px #888888;;
+}
 .top{
     height: 35px;
     width: 100%;

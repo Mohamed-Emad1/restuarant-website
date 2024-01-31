@@ -4,7 +4,7 @@
 
     <div><navbar/></div>
     <div class="container">
-    <img src="../assets/Rectangle 58.png" alt="background" style="max-width: 100%;">
+    
 
     <div class="login">
 
@@ -36,7 +36,5 @@ export default {
     --fifth-color:rgba(255, 255, 255, 1);
 
 }
-.container{
-    width: 100%;
-}
+
 </style>
