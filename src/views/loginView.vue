@@ -130,18 +130,26 @@ export default {
 
   @media(max-width:991px){
     .reg{
+        justify-content: space-around;
         flex-direction: column;
   }
   .reg .login,.register{
-    width: 200px;
+    width: 220px;
   }
   .container .login input,.register input{
     width: 150px;
   }
+    .container .login span{
+    bottom:175px;
+    left: 80px;
+    font-size: 15px;
+  }
 }
 @media(max-width:767px){
     .reg{
+        justify-content: space-around;
         flex-direction: column;
+        margin-left: 50px;
     }
     .reg .login,.register{
         width: 200px;
@@ -151,7 +159,7 @@ export default {
   }
   .container .login span{
     bottom:175px;
-    left: 30px;
+    left: 80px;
     font-size: 15px;
   }
 }

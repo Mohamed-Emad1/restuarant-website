@@ -60,7 +60,7 @@
 
         </div>
         <div class="rights">
-            <p style="margin-top: 50px;">Copyright &copy; 2024 | Mohamed & Ali</p>
+            Copyright &copy; 2024 | Mohamed & Ali
         </div>
 </div>
 </template>
@@ -134,6 +134,7 @@ p{
 .main .last{
     text-align: center;
     color: var(--fourth-color);
+    cursor: pointer;
 }
     .rights{
     height: 100px;
@@ -142,11 +143,24 @@ p{
     color: var(--fifth-color);
     text-align: center;
     position: relative;
-
-}
-.rights > p{
-    position: absolute;
-    left: 42%;
     font-weight: 800;
+    line-height: 6;
+}
+
+
+
+      @media(max-width:991px){
+
+      }
+    @media(max-width:767px){
+        .main{
+            height: 540px;
+        flex-direction: column;
+        text-align: center;
+        }
+        .rights{
+
+        }
+
     }
 </style>

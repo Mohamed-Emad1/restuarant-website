@@ -131,6 +131,7 @@ export default {
     margin: 25px 18px;
     font-weight: 600;
     color: var(--second-color);
+    cursor: pointer;
 }
 .main-nav .container .delivery{
     display: flex;
