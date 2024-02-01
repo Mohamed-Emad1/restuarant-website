@@ -23,10 +23,10 @@
         <img src="../assets/logo.png" alt="logo">
         <ul class="list">
             <li @click="">
-                HOME
+               <router-link style=" margin: 25px 18px; font-weight: 600; color: var(--second-color);cursor: pointer; " to="/">Home</router-link>
             </li>
             <li @click="">
-                ABOUT
+                <router-link style=" margin: 25px 18px; font-weight: 600; color: var(--second-color);cursor: pointer; " to="/about">About</router-link>
             </li>
             <li @click="">
                 BLOG
@@ -49,7 +49,7 @@
                 <p>+880 1630 225 015</p>
 
             </div>
-            <img src="../assets/food 1.png" alt="">
+            <img src="../assets/food_1.png" alt="">
         </div>
 
         <button ><router-link style="list-style: none; color: var(--fifth-color); text-decoration: none;" to = '/loginViewVue'>LOGIN</router-link> </button>
@@ -127,7 +127,7 @@ export default {
     align-items: flex-start;
     list-style: none;
 }
-.main-nav .container .list li{
+.main-nav .container .list li {
     margin: 25px 18px;
     font-weight: 600;
     color: var(--second-color);

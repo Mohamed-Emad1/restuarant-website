@@ -158,9 +158,9 @@ p{
         flex-direction: column;
         text-align: center;
         }
-        .rights{
+        /* .rights{
 
-        }
+        } */
 
     }
 </style>

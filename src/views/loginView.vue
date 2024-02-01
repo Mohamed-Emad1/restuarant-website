@@ -6,7 +6,7 @@
         <navbar />
     </div>
     <div class="container">
-        <img src="../assets/Rectangle 58.png" alt="background" style="max-width: 100%;">
+        <img src="../assets/Rectangle_58.png" alt="background" style="max-width: 100%;">
 
         <div class="reg">
             <div class="login">
@@ -42,7 +42,7 @@
     </div>
 
     <div>
-        <Footer />
+    <Footer></Footer>
     </div>
 </template>
 <script>
