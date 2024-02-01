@@ -67,6 +67,9 @@ export default {
     --fifth-color: rgba(255, 255, 255, 1);
 
 }
+body,html{
+    background-color: var(--fifth-color);
+}
 .reg{
     margin-top: 40px;
     display: flex;
@@ -110,7 +113,7 @@ export default {
 }
 .container .login span{
     left: 90px;
-    bottom: -60px;
+    bottom: 15px;
     position: absolute;
     font-size: 23px;
     color: black;

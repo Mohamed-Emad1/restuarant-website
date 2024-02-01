@@ -2,7 +2,7 @@
      <link rel="stylesheet" href="src/normalize/colors.css">
      
     <p class="title">Our Branch</p>
-    <div class="container">
+    <div class=".container-footer">
         <div class="main">
             <div class="person1">
                 <p>Robert Food</p>
@@ -74,7 +74,12 @@ export default {
 
 }
 </script>
-<style scoped>
+<style>
+body{
+    background-color: var(--third-color);
+}
+</style>
+<style>
 *{
     --primary-color:rgba(204, 51, 51, 1);
     --second-color:rgba(42, 67, 93, 1);
@@ -83,6 +88,7 @@ export default {
     --fifth-color:rgba(255, 255, 255, 1);
 
 }
+
 .title{
     margin-top: 60px;
     color: var(--second-color);
@@ -90,13 +96,16 @@ export default {
     font-weight: bold;
     font-size: 30px;
 }
+.container-footer{
+    width: 100%;
+}
 p{
     line-height: 0.5;
 }
 .main{
     margin-top: 20px;
     height: 200px;
-    width: 100%;
+    max-width: 100%;
     background-color: var(--primary-color);
     color: var(--fifth-color);
     display: flex;
@@ -106,6 +115,10 @@ p{
     font-weight: bold;
     font-size: 25px;
     text-align: center;
+    margin-top: 20px;
+}
+.main div p:nth-child(2){
+    margin-top: 20px;
 }
 
 
@@ -118,18 +131,27 @@ p{
     width: 120px;
     display: flex;
     justify-content: space-between;
-    margin-left: 15px;
+    margin-left: 14px;
+}
+.main .times-phones{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .main .times-phones .cl,.watch p{
     font-size: 10px;
-    line-height: 0.1;
+    margin-top: 5px;
+    line-height: 0;
+    position: relative;
 }
 .main .times-phones .cl,.watch img{
     /* margin-top: 10px; */
     width: 15px;
     height: 15px;
 
+}
+.main .times-phones img{
+    /* margin-top: 10px; */
 }
 .main .last{
     text-align: center;
@@ -138,7 +160,7 @@ p{
 }
     .rights{
     height: 100px;
-    width: 100%;
+    max-width: 100%;
         background-color: var(--second-color);
     color: var(--fifth-color);
     text-align: center;

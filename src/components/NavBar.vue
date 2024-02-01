@@ -1,7 +1,8 @@
 <template>
      <link rel="stylesheet" href="src/normalize/colors.css">
+     <link rel="stylesheet" href="src/normalize/normalize.css">
 
-<div class="container">
+<div class="container-nav">
     <div class="top">
 
         <div class="cl">
@@ -12,21 +13,21 @@
         </div>
         <div class="watch">
         <img src="../assets/phone_icon.png" alt="watch">
-        <p>+880 1630 225 015</p>
+        <p style="margin-top: 15px;">+880 1630 225 015</p>
         </div>
 
         <p @click="">REGISTER</p>
 
     </div>
     <div class="main-nav">
-        <div class="container">
+        <div class="container2">
         <img src="../assets/logo.png" alt="logo">
         <ul class="list">
             <li @click="">
-               <router-link style=" margin: 25px 18px; font-weight: 600; color: var(--second-color);cursor: pointer; " to="/">Home</router-link>
+               <router-link style="text-decoration: none; margin: 25px 18px; font-weight: 600; color: var(--second-color);cursor: pointer; " to="/">Home</router-link>
             </li>
             <li @click="">
-                <router-link style=" margin: 25px 18px; font-weight: 600; color: var(--second-color);cursor: pointer; " to="/about">About</router-link>
+                <router-link style="text-decoration: none; margin: 25px 18px; font-weight: 600; color: var(--second-color);cursor: pointer; " to="/about">About</router-link>
             </li>
             <li @click="">
                 BLOG
@@ -44,7 +45,7 @@
             <div class="cart" style="position: relative;">
                 <img src="../assets/cart_icon.png" alt="" style="position: absolute;">
             </div>
-            <div>
+            <div class="delivery-phones">
                 <p>Delivery order</p>
                 <p>+880 1630 225 015</p>
 
@@ -69,7 +70,7 @@ export default {
 
 }
 </script>
-<style scoped>
+<style>
 *{
     --primary-color:rgba(204, 51, 51, 1);
     --second-color:rgba(42, 67, 93, 1);
@@ -78,12 +79,25 @@ export default {
     --fifth-color:rgba(255, 255, 255, 1);
 
 }
-.container{
-    box-shadow: 0px 10px 15px #888888;;
+body, html {
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--third-color); */
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-nav{
+    box-shadow: 0px 10px 15px #888888;
+    margin-top: 0px;
+    width: 100%;
+}
+
 .top{
     height: 35px;
-    width: 100%;
+    max-width: 100%;
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
@@ -112,31 +126,37 @@ export default {
     width: 100%;
     background-color: var(--third-color);
 }
-.main-nav .container{
+.main-nav .container2{
     display: flex;
     justify-content: space-between;
 }
-.main-nav .container> img{
+.main-nav .container2> img{
     width: 112px;
     height: 75px;
     margin: 10px 70px;
 }
-.main-nav .container .list{
+
+.main-nav .container2 .list{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     list-style: none;
 }
-.main-nav .container .list li {
+.main-nav .container2 .list li {
     margin: 25px 18px;
     font-weight: 600;
     color: var(--second-color);
     cursor: pointer;
+    border-bottom: 2px solid transparent; /* Set initial border */
+    transition: border-bottom 0.9s; /* Specify the property and duration */
 }
-.main-nav .container .delivery{
+.main-nav .container2 .list li:hover {
+    border-bottom: 2px solid var(--second-color);
+}
+.main-nav .container2 .delivery{
     display: flex;
 }
-.main-nav .container .delivery .cart{
+.main-nav .container2 .delivery .cart{
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -144,28 +164,28 @@ export default {
     margin-top: 28px;
     margin-right: 20px;
 }
-.main-nav .container .delivery .cart img{
+.main-nav .container2 .delivery .cart img{
     left: 10px;
     top: 18px;
 }
-.main-nav .container .delivery div >p{
+.main-nav .container2 .delivery div >p{
     color: var(--second-color);
 
 
 }
-.main-nav .container .delivery div >p:first-child{
+.main-nav .container2 .delivery div >p:first-child{
     font-weight: bold;
     font-size: 20px;
     
 }
-.main-nav .container .delivery >img{
+.main-nav .container2 .delivery >img{
     height: 35px;
     width: 35px;
     margin-left: 18px;
     margin-top: 26px;
 }
 
-.main-nav .container button{
+.main-nav .container2 button{
     width: 90px;
     height: 35px;
     color: var(--fifth-color);
@@ -176,5 +196,8 @@ export default {
     border: none;
     outline: none;
     border-radius: 15px;
+}
+.delivery-phones{
+    margin-top: 15px;
 }
 </style>

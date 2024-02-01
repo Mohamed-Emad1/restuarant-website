@@ -1,4 +1,5 @@
 <template>
+  <link rel="stylesheet" href="src/normalize/normalize.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <div>
           <navbar />
@@ -118,9 +119,9 @@
               </div>
             </div>
   </section>
-   <div>
-      <Footer></Footer>
-      </div>
+
+      <div><Footer/></div>
+      
 </template>
 <script>
 
@@ -134,25 +135,29 @@ export default {
   }
 }
 </script>
-<style>
+
+
+
+<style scoped>
 *{
+    --primary-color:rgba(204, 51, 51, 1);
+    --second-color:rgba(42, 67, 93, 1);
+    --third-color:rgba(255, 248, 238, 1);
+    --fourth-color:rgba(75, 255, 60, 1);
+    --fifth-color:rgba(255, 255, 255, 1);
+
+
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0; 
+    box-sizing: border-box; 
    
 }
-
-html::-webkit-scrollbar-track{
-  background: transparent;
+body,html{
+  width: 100%;
+  min-height: 100v;
+  background-color: var(--third-color)
 }
 
-html::-webkit-scrollbar-thumb{
-  background: #f00a0a;
-  border-radius: 10px;
-}
-html::-webkit-scrollbar{
-  width: 10px;
-}
 .page-header {
     background-image: url("../assets/image_about-bg.png");
     background-repeat: no-repeat;
@@ -161,6 +166,7 @@ html::-webkit-scrollbar{
     margin: 0 auto;
     padding: 0;
     position: relative;
+    
 }
 .container{
   margin-top: 5%;
