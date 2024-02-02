@@ -74,11 +74,7 @@ export default {
 
 }
 </script>
-<style>
-body{
-    background-color: var(--third-color);
-}
-</style>
+
 <style>
 *{
     --primary-color:rgba(204, 51, 51, 1);
@@ -90,7 +86,6 @@ body{
 }
 
 .title{
-    margin-top: 60px;
     color: var(--second-color);
     text-align: center;
     font-weight: bold;

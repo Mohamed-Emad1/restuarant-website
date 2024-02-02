@@ -67,7 +67,7 @@ export default {
     --fifth-color: rgba(255, 255, 255, 1);
 
 }
-body,html{
+.container{
     background-color: var(--fifth-color);
 }
 .reg{
