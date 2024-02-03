@@ -4,7 +4,7 @@
         <div class="r1">
             <div class="circle">
                 <span>1</span>
-                <img src="../assets/cooking 1.png" alt="">
+                <img src="../assets/cooking1.png" alt="">
             </div>
             <h5>Passionate Chefs</h5>
             <p>Beguiled and demoralized by all get charms pleasure the moments ever so blinded by desire.</p>
@@ -13,7 +13,7 @@
         <div class="r2">
             <div class="circle">
                     <span>2</span>
-                    <img src="../assets/diet 1.png" alt="">
+                    <img src="../assets/diet_1.png" alt="">
                 </div>
                 <h5>100 % Fresh Foods</h5>
                 <p>Beguiled and demoralized by all get charms pleasure the moments ever so blinded by desire.</p>
@@ -22,7 +22,7 @@
         <div class="r3">
             <div class="circle">
                     <span>3</span>
-                    <img src="../assets/candle 1.png" alt="">
+                    <img src="../assets/candle_1.png" alt="">
                 </div>
                 <h5>Memorable Ambience</h5>
                 <p>Beguiled and demoralized by all get charms pleasure the moments ever so blinded by desire.</p>

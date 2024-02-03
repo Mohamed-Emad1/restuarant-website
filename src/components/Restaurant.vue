@@ -15,14 +15,14 @@
                         </div>
                         <div class="success">
                             <div class="logo">
-                                <img src="../assets/growth 1.png" alt="">
+                                <img src="../assets/growth_1.png" alt="">
                             </div>
                             <h3>Success Story</h3>
                             <p>Certain circumstances and owing to the claims of duty obligations of business it will frequently.</p>
                             <button>Read More</button>
 
                             <div class="logo">
-                                <img src="../assets/cooking 1.png" alt="">
+                                <img src="../assets/cooking1.png" alt="">
                             </div>
                             <h3>Passionate Chefs</h3>
                             <p>Duty or the obligations of business it frequently occur pleasures have to be repudiated.</p>
