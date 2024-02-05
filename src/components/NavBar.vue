@@ -36,7 +36,7 @@
                 PAGE
             </li>
             <li @click="">
-                CONTACT
+                <router-link style="text-decoration: none; margin: 25px 18px; font-weight: 600; color: var(--second-color);cursor: pointer; " to="/contact">CONTACT</router-link>
             </li>
 
 
