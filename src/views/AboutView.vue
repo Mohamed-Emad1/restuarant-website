@@ -5,7 +5,7 @@
           <navbar />
       </div>
   <section class="page-header ">
-    <div class="container">
+    <div class="container-2">
       <div class="page-header_wrap">
         <div class="page-heading">
           <h1>About Us</h1><br>
@@ -48,9 +48,10 @@
              </p>
           </div>
           <div class="col-md-6">
-              <div class="card">
-                <img src="../assets/about2.jpeg" alt="">
-              </div>
+              
+                <img style="margin-bottom: 15px;     margin-bottom: 15px;
+    max-width: 530px;
+    height: 400px;" src="../assets/about2.jpeg" alt="">
             </div>
         </div>
       </div>
@@ -79,19 +80,19 @@
   <section class="part4">
     <div><h1>special service</h1></div>
     <div><h6>What Special services we are offering now</h6></div>
-    <div class="container">
+    <div class="container-2">
             <div class="row">
           
               <div class="col-md-6">
-                <h2>Birthday Party</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima numquam porro consequuntur ipsum, nulla aliquam amet quam consequatur expedita.
+                <h2 style="font-weight: bold;">Birthday Party</h2>
+                <p style="font-size: 15px; margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima numquam porro consequuntur ipsum, nulla aliquam amet quam consequatur expedita.
                  
                  </p>
                  
               </div>
               <div class="col-md-6">
-                <h2>Wedding Party</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima numquam porro consequuntur ipsum, nulla aliquam amet quam consequatur expedita.
+                <h2 style="font-weight: bold;">Wedding Party</h2>
+                  <p style="font-size: 15px; margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima numquam porro consequuntur ipsum, nulla aliquam amet quam consequatur expedita.
                    </p>
                 </div>
             </div>
@@ -255,9 +256,7 @@ body,html{
   font-size: 30px;
   font-weight: bold;
 }
-.card{
-  background-color: #db1717
-}
+
 .part3{
   background-color: #FFDFDF;
   max-width: 100%;

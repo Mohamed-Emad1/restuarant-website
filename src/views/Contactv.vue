@@ -6,7 +6,7 @@
         <navbar />
     </div>
     <section class="page-header ">
-        <div class="container">
+        <div class="container-2">
             <div class="page-header_wrap">
                 <div class="page-heading">
                     <h1>CONTACT US</h1><br>
@@ -75,6 +75,7 @@ export default {
     --third-color: rgba(255, 248, 238, 1);
     --fourth-color: rgba(75, 255, 60, 1);
     --fifth-color: rgba(255, 255, 255, 1);
+    
 
 
     margin: 0;
@@ -98,6 +99,7 @@ html {
     margin: 0 auto;
     padding: 0;
     position: relative;
+    z-index: 99;
 
 }
 

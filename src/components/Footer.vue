@@ -85,11 +85,13 @@ export default {
 
 }
 
+
 .title{
     color: var(--second-color);
     text-align: center;
     font-weight: bold;
     font-size: 30px;
+    
 }
 .container-footer{
     width: 100%;
@@ -145,9 +147,7 @@ p{
     height: 15px;
 
 }
-.main .times-phones img{
-    /* margin-top: 10px; */
-}
+
 .main .last{
     text-align: center;
     color: var(--fourth-color);
