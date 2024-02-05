@@ -13,7 +13,7 @@
                         <div class="info">
                             <p>Delivery Order <br> <span>+880 1630 225 015</span> </p>
                             <img src="../assets/food_1.png" alt="">
-                            <button>Order Now</button>
+                            <button class="order-now"> <router-link class="order-now" style="text-decoration: none; color: var(--fifth-color);" to="/itemsViewVue">Order Now</router-link> </button>
                         </div>
     
 
@@ -66,5 +66,10 @@
     padding: 8px 30px;
     border: none;
     cursor: pointer;
+    transition: 0.8s;
 }
+.delivery-section .description .info button:hover{
+    background-color: rgb(137, 42, 23);
+}
+
 </style>
