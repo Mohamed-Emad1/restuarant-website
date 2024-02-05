@@ -20,9 +20,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="card">
+          
             <img src="../assets/image_about_1.png" alt="">
-          </div>
+        
         </div>
         <div class="col-md-6">
           
@@ -69,9 +69,9 @@
                <button id="about-btn">View our all menu.</button>
             </div>
             <div class="col-md-3">
-                <div class="card">
+                
                   <img src="../assets/image_ourChef.png" alt="">
-                </div>
+                
               </div>
           </div>
         </div>
@@ -96,25 +96,36 @@
                 </div>
             </div>
           </div>
-           <div><h1>OUR TEAM</h1></div>
+           <div class="our"><h1>OUR TEAM</h1></div>
       <div><h5>The Hardworking Team behind the restaurant</h5></div>
-      <div class="container">
+      <div class="container-s">
               <div class="row">
           
                 <div class="col-md-4">
-                  <div class="card">
-                    <img src="../assets/card3.png" alt="">
-                  </div>
+                    <div class="sub-container">
+                      <h3>Brain Adams</h3>
+                      <p>pLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna.Lorem ipsum dolor  sitamet</p>
+                    </div>
+                    <!-- <img src="../assets/card3.png" alt=""> -->
+
                 </div>
                 <div class="col-md-4">
-                  <div class="card">
-                    <img src="../assets/card2.png" alt="">
-                  </div>
+                  <div class="sub-container">
+                        <h3>Jhon Khan</h3>
+                        <p>pLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna.Lorem ipsum dolor  sitamet</p>
+                      </div>
+                    <!-- <img src="../assets/card2.png" alt=""> -->
                   </div>
                   <div class="col-md-4">
-                   <div class="card">
-                    <img src="../assets/card1.png" alt="">
-                  </div>
+                   <div class="sub-container">
+                        <h3>Jessica biel</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna.Lorem ipsum dolor  sitamet</p>
+                      </div>
+                    <!-- <img src="../assets/card1.png" alt=""> -->
+                  
                     </div>
               </div>
             </div>
@@ -225,12 +236,6 @@ body,html{
   font-weight: bold;
 }
 
-#about .card{
-  border-radius: 10px;
-}
-#about .card img{
-  border-radius: 10px;
-}
 
 @media screen and (max-width:982px){
   #about p{
@@ -254,20 +259,25 @@ body,html{
   background-color: #db1717
 }
 .part3{
-  background-image: url("../assets/Rectangle_62.png");
-   background-repeat: no-repeat;
-    background-size: cover;
-    border: 0 none;
-    margin: 0 auto;
-    padding: 0 auto;
-    margin-top: 5%;
-    position: relative;
+  background-color: #FFDFDF;
+  max-width: 100%;
+  padding: 10px;
+  line-height: 1.2;
+
+}
+.part3 button{
+  margin-top: 18px;
+  text-align: center;
+  margin-left: 250px;
+  border-radius: 18px;
 }
 .part3 h4{
   color: #f00a0a;
 }
 .part3 h1{
   color: #161734;
+  margin-top: 15px;
+  margin-bottom: 8px;
 }
 .part3 img{
 height: 100%;
@@ -282,5 +292,63 @@ height: 100%;
 }
 .part4 h6,h2{
   color: #ed2405;
+}
+.our{
+  margin-top: 60px;
+  color: var(--second-color);
+}
+.row{
+  display: flex;
+  margin-top: 100px;
+}
+.sub-container{
+  width: 343px;
+  height: 343px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  text-align: center;
+  position: relative;
+}
+.row>:nth-child(1) .sub-container::after{
+  content:'';
+  background: url('../assets/image_ourTeam_1.png');
+  position: absolute;
+  width: 217px;
+  height: 217px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  right: 0px;
+  top: -70px;
+}
+.row>:nth-child(2) .sub-container::after{
+  content:'';
+  background: url('../assets/image_ourTeam_2.png');
+  position: absolute;
+  width: 217px;
+  height: 217px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  right: 0px;
+  top: -70px;
+}
+.row>:nth-child(3) .sub-container::after{
+  content:'';
+  background: url('../assets/image_ourTeam_3.png');
+  position: absolute;
+  width: 217px;
+  height: 217px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  right: 0px;
+  top: -70px;
+}
+.sub-container h3{
+  margin-top: 160px;
+
+}
+.sub-container p{
+  font-size: 15px;
+  margin: 10px 45px;
+  text-align: center;
 }
 </style>
